@@ -1,6 +1,75 @@
 {
-    "body":
+    "navigation":{
+        "about": "Apie mus",
+        "challenges": "Iššūkiai",
+        "faq": "D.U.K.",
+        "contacts": "Kontaktai"
+    },
+    "subscription":{
+        "email_request":"Įveskite el. paštą",
+        "subscribe":"Prenumeruoti"
+    },
+    "call_to_action":{
+        "header": "Pradėk savo kelią į tvarumą jau dabar",
+        "subtext": "Pirmieji sužinokite, kai galėsite nemokamai atsisiųsti Ordino aplikaciją"
+    },
+    "reasons":{
+        "header": "Kodėl Ordino?",
+        "boxes":{
+            "info": "Lengvai pasiekiama rūšiavimo informacija",
+            "puzzle": "Savo indėlio stebėjimas",
+            "growth": "Tvaresnių įpročių ugdymas",
+            "group": "Bendraminčių ir draugų grupės",
+            "news": "Aktualios naujienos apie rūšiavimą",
+            "global": "Sutaupytų gamtos resursų ataskaitos"
+        }
+    },
+    "about":{
+        "name": "Apie mus",
+        "header": "Atliekų rūšiavimas dar niekad nebuvo toks paprastas",
+        "text": "Ordino Recycling - tai bendraminčių komanda, kuriai rūpi ekologija ir mūsų planetos ateitis. Sukūrėme Ordino programėlę, kad parodytume. jog rūšiavimas gali būti paprastas, įdomus ir lengvai prieinamas kiekvienam." 
+    },
+    "partners":{
+        "header": "Mūsų partneriai"
+    },
+    "challenges":
     {
-        "test": "This is localized text"
+        "name": "Mūsų iššūkiai",
+        "header": "Kiekvienas mūsų turi galios savo rankose",
+        "text": "Žinių apie taisyklingą atliekų rūšiavimą trūkumas vienoje vietoje, o bandant jų gauti - informacijos gausoje galima pasiklysti. Šaltinių daug, bet nėra vienos vietos, kur būtų pateikta reikalinga informacija sėkmingai atliekų rūšiavimo pradžiai.\n\nAtrodo, kad rūšiavimas yra sunkus procesas. Perkant produktus reikia išsirinkti perdirbamą pakuotę, panaudojus ją išplauti, išmesti į tam skirtą konteinerį.\n\nPrasmės ir motyvacijos stoka. Vis dar dažnas mitas, kad visos išrūšiuotos atliekos supilamos į vieną šiukšlių mašiną. Bet iš tikrųjų išrūšiuotos atliekos yra surenkamos atskirai ir perdirbamos.\n\nSunku pereiti nuo ketinimo prie veiksmų. O veiksmams reikia subręsti.\n\nTačiau didžiausias iššūkis - pakeisti savo įpročius ir gyvenimo būdą. Bet tik tokiu būdu galime bendromis jėgomis pakeisti mūsų aplinką, o gal ir pasaulį."       
+    },
+    "faq":{
+        "header": "D.U.K.",
+        "questions":
+        {
+            "price":{
+                "question": "Ar programėlė yra mokama?",
+                "answer": "Ordino programėlė yra nemokama, tačiau Pro versija leistų pamatyti platesnę ataskaitą apie savo indėlį."
+            },
+            "download":{
+                "question": "Kada galėsiu atsisiųsti programėlę?",
+                "answer": "Planuojama, kad programėlė bus viešai prieinama 2022 metų pirmoje pusėje."
+            }
+        }
+    },
+    "footer":
+    {
+        "links":{
+            "header": "Ordino",
+            "about": "Apie mus",
+            "challenges": "Iššūkiai",
+            "faq": "D.U.K.",
+            "contacts": "Kontaktai"
+        },
+        "follow":{
+            "header": "Sekite mus"
+        },
+        "contacts":{
+            "header": "Kontaktai",
+            "phone": "Telefonas: ",
+            "email": "El. paštas: ",
+            "adress": "Adresas: "
+        },
+        "copyright": "© Ordino Recycling 2022"
     }
 }

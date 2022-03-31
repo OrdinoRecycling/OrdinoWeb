@@ -4,101 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ordino is a green life style app, here to help everybody learn how to recycle.">
+    <meta name="keywords" content="ordino, recycling, mobile, app, green, environment">
     <title>Ordino</title>
+    <link rel="icon" href="resources/img/ordino-logo-reduced.png" type="image/x-icon">
     <script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
     <!-- <link rel="import" href="./components/reason-box/reasonBox.html"> -->
-    <script src="./lang/lt.js"></script>
+    <link rel="stylesheet" href="style.css">
     <script src="./components/reason-box/reasonBox.js"></script>
 </head>
 <body>
-  <nav>
-      <div class="nav-logo-container"></div>
-      <div class="nav-link-container">
-        <a href="" class="localize navbar-button">Apie mus</a>
-        <a href="" class="localize navbar-button">Iššūkiai</a>
-        <a href="" class="localize navbar-button">D.U.K.</a>
-        <a href="" class="localize navbar-button">Kontaktai</a>
-      </div>
-  </nav>  
-  <section class="section-cta">
+  <nav class="navbar">
+      <img src="resources/img/orgino-logo-full.png" class="nav-logo"></img>
+      <ul class="nav-link-container">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="nav-menu">
+          <li><a href="#section-about"      class="localize nav-link" loc-id="navigation.about">Apie mus</a> </li>
+          <li><a href="#section-challenges" class="localize nav-link" loc-id="navigation.challenges">Iššūkiai</a> </li>
+          <li><a href="#section-faq"        class="localize nav-link" loc-id="navigation.faq">D.U.K.</a> </li>
+          <li><a href="#section-contacts"   class="localize nav-link" loc-id="navigation.contacts">Kontaktai</a> </li>
+        </div>
+      </ul>
+  </nav>
+
+  <section id="section-cta" class="section-cta section-centered">
     <div class="cta-content">
-      <h1 class="cta-header localize">Pradėk savo kelią į tvarumą jau dabar</h1>
-      <p class="cta-subtext localize">Pirmieji sužinokite, kai galėsite nemokamai atsisiųsti Ordino aplikaciją</p>
+      <h1 loc-id="call_to_action.header" class="cta-header localize">Pradėk savo kelią į tvarumą jau dabar</h1>
+      <p loc-id="call_to_action.subtext" class="cta-subtext localize">Pirmieji sužinokite, kai galėsite nemokamai atsisiųsti Ordino aplikaciją</p>
       <div class="subscription-container">
-        <form class="subscription-form" action="">
-          <input type="text" name="" id="" class="subscription-email-input"/>
-          <input type="button" value="" class="subscription-submit">
-        </form>
+        <button loc-id="subscription.subscribe" type="button"  class="localize subscription-button">Prenumeruoti</button>
       </div>
     </div>
   </section>
 
-  <section class="section-centered section-why">
-    <h2 class="section-header">Kodėl Ordino?</h2>
+  <section class="section-centered section-reasons">
+    <h2 loc-id="reasons.header" class="localize section-header">Kodėl Ordino?</h2>
     <hr class="section-header-divider">
     <div class="reason-box-container">
       <div class="reason-box">
         <!-- Info -->
-        <img src="./resources/hand-info.svg" alt="Hand with information" class="reason-icon"/>
-        <p class="localize reason-text">Lengvai pasiekiama rūšiavimo informacija</p>
+        <img src="./resources/img/hand-info.svg" alt="Hand with information" class="reason-icon"/>
+        <p loc-id="reasons.boxes.info" class="localize reason-text">Lengvai pasiekiama rūšiavimo informacija</p>
       </div>
       <div class="reason-box">
         <!-- Puzzle -->
-        <img src="./resources/hand-puzzle.svg" alt="Hand with puzzle piece" class="reason-icon"/>
-        <p class="localize reason-text">Savo indėlio stebėjimas</p>
+        <img src="./resources/img/hand-puzzle.svg" alt="Hand with puzzle piece" class="reason-icon"/>
+        <p loc-id="reasons.boxes.puzzle" class="localize reason-text">Savo indėlio stebėjimas</p>
       </div>
       <div class="reason-box">
         <!-- Plant -->
-        <img src="./resources/hand-plant.svg" alt="Hand with growing plant" class="reason-icon"/>
-        <p class="localize reason-text">Tvaresnių įpročių ugdymas</p>
+        <img src="./resources/img/hand-plant.svg" alt="Hand with growing plant" class="reason-icon"/>
+        <p loc-id="reasons.boxes.growth" class="localize reason-text">Tvaresnių įpročių ugdymas</p>
       </div>
       <div class="reason-box">
         <!-- Group -->
-        <img src="./resources/group-connected.svg" alt="Group connected by lines" class="reason-icon"/>
-        <p class="localize reason-text">Bendraminčių ir draugų grupės</p>
+        <img src="./resources/img/group-connected.svg" alt="Group connected by lines" class="reason-icon"/>
+        <p loc-id="reasons.boxes.group" class="localize reason-text">Bendraminčių ir draugų grupės</p>
       </div>
       <div class="reason-box">
         <!-- News -->
-        <img src="./resources/news-coffe.svg" alt="Newspaper and coffe" class="reason-icon"/>
-        <p class="localize reason-text">Aktualios naujienos apie rūšiavimą</p>
+        <img src="./resources/img/news-coffe.svg" alt="Newspaper and coffe" class="reason-icon"/>
+        <p loc-id="reasons.boxes.news" class="localize reason-text">Aktualios naujienos apie rūšiavimą</p>
       </div>
       <div class="reason-box">
         <!-- Global -->
-        <img src="./resources/hands-globe.svg" alt="Hands holding globe" class="reason-icon"/>
-        <p class="localize reason-text">Sutaupytų gamtos resursų ataskaitos</p>
+        <img src="./resources/img/hands-globe.svg" alt="Hands holding globe" class="reason-icon"/>
+        <p loc-id="reasons.boxes.global" class="localize reason-text">Sutaupytų gamtos resursų ataskaitos</p>
       </div>
     </div>
   </section>
 
-  <section class="section-shuffled section-about">
+  <section id="section-about" class="section-shuffled section-about">
     <div class="text-card">
-      <h2 class="localize text-card-header">Apie Mus</h2>
-      <h2 class="localize section-header">Atliekų rūšiavimas dar niekad nebuvo toks paprastas</h2>
+      <h2 loc-id="about.name" class="localize section-name">Apie Mus</h2>
+      <h2 loc-id="about.header" class="localize section-header">Atliekų rūšiavimas dar niekad nebuvo toks paprastas</h2>
       <div class="text-card-content">
         <hr class="text-card-line">
-        <p class="localize text-card-text">Ordino Recycling - tai bendraminčių komanda, kuriai rūpi ekologija ir mūsų planetos ateitis. Sukūrėme Ordino programėlę, kad parodytume. jog rūšiavimas gali būti paprastas, įdomus ir lengvai prieinamas kiekvienam.</p>
+        <p loc-id="about.text" class="localize text-card-text">Ordino Recycling - tai bendraminčių komanda, kuriai rūpi ekologija ir mūsų planetos ateitis. Sukūrėme Ordino programėlę, kad parodytume. jog rūšiavimas gali būti paprastas, įdomus ir lengvai prieinamas kiekvienam.</p>
       </div>
     </div>
     <div class="img-card">
-      <img src="" alt="Forest with road">
+      <img src="./resources/img/background_2.png" alt="Forest with road">
     </div>
   </section>
 
   <section class="section-centered section-partners">
-    <h2 class="localize section-header">Mūsų parneriai</h2>
+    <h2 loc-id="partners.header" class="localize section-header">Mūsų parneriai</h2>
     <hr class="section-header-divider">
-    <div class="partner-images">
-      <img src="" alt="Green dot">
+    <div class="partner-image-container">
+      <img class="partner-image" src="./resources/img/zalias_taskas.png" alt="Green dot">
     </div>
   </section>
 
-  <section class="section-shuffled section-challenges">
+  <section id="section-challenges" class="section-shuffled section-challenges">
     <div class="text-card">
-      <h2 class="localize text-card-header">Mūsų iššūkiai</h2>
-      <h2 class="localize section-header">Kiekvienas mūsų turi galios savo rankose</h2>
+      <h2 loc-id="challenges.name" class="localize section-name">Mūsų iššūkiai</h2>
+      <h2 loc-id="challenges.header" class="localize section-header">Kiekvienas mūsų turi galios savo rankose</h2>
       <div class="text-card-content">
         <hr class="text-card-line">
-        <p class="localize text-card-text">Žinių apie taisyklingą atliekų rūšiavimą trūkumas vienoje vietoje, o bandant jų gauti - informacijos gausoje galima pasiklysti. Šaltinių daug, bet nėra vienos vietos, kur būtų pateikta reikalinga informacija sėkmingai atliekų rūšiavimo pradžiai. 
+        <p loc-id="challenges.text" class="localize section-text">Žinių apie taisyklingą atliekų rūšiavimą trūkumas vienoje vietoje, o bandant jų gauti - informacijos gausoje galima pasiklysti. Šaltinių daug, bet nėra vienos vietos, kur būtų pateikta reikalinga informacija sėkmingai atliekų rūšiavimo pradžiai. 
 
           Atrodo, kad rūšiavimas yra sunkus procesas. Perkant produktus reikia išsirinkti perdirbamą pakuotę, panaudojus ją išplauti, išmesti į tam skirtą konteinerį. 
           
@@ -110,60 +115,98 @@
       </div>
     </div>
     <div class="img-card">
-      <img src="" alt="Green puzzle pieces">
+      <img src="./resources/img/background_3.png" alt="Green puzzle pieces">
     </div>
   </section>
   
-  <section class="section-centered section-faq">
-    <h2 class="localize section-header">D.U.K.</h2>
+  <section id="section-faq" class="section-centered section-faq">
+    <h2 loc-id="faq.header" class="localize section-header">D.U.K.</h2>
     <hr class="section-header-divider">
+    <!-- Price Question -->
     <div class="faq-container">
-      <div class="faq-question-container">
-        <h3 class="faq-question">Ar programėlė yra mokama?</h3>
-        <img src="" alt="" class="faq-button">
+      <div class="faq-content">
+        <button class="faq-question-container">
+          <h3 loc-id="faq.questions.price.question" class="localize faq-question">Ar programėlė yra mokama?</h3>
+          <img src="resources/img/faq-arrow-closed.svg" alt="arrow" class="faq-arrow">
+        </button>
         <div class="faq-answer-container">
-          <p class="faq-answer">Ordino programėlė yra nemokama, tačiau Pro versija leistų pamatyti platesnę ataskaitą apie savo indėlį.</p>
+          <p loc-id="faq.questions.price.answer" class="localize faq-answer">Ordino programėlė yra nemokama, tačiau Pro versija leistų pamatyti platesnę ataskaitą apie savo indėlį.</p>
         </div>
       </div>
+    <hr class="faq-divider">
+    <!-- Download Question -->
+    
+      <div class="faq-content">
+        <button class="faq-question-container">
+          <h3 loc-id="faq.questions.download.question" class="localize faq-question">Kada galėsiu atsisiūsti programėlę?</h3>
+          <img src="resources/img/faq-arrow-closed.svg" alt="arrow" class="faq-arrow">
+        </button>
+        <div class="faq-answer-container">
+          <p loc-id="faq.questions.download.answer" class="localize faq-answer">Planuojama, kad programėlė bus viešai prieinama 2022 metų pirmoje pusėje.</p>
+        </div>
+      </div>
+      <hr class="faq-divider">
     </div>
   </section>
 
-  <section class="section-end">
+  <section class="section-end section-centered">
     <div class="end-content">
-      <p class="localize end-text">Pirmieji sužinokite, kai galėsite nemokamai atsisiųsti Ordino aplikaciją</p>
+      <p loc-id="call_to_action.subtext" class="localize end-text">Pirmieji sužinokite, kai galėsite nemokamai atsisiųsti Ordino aplikaciją</p>
+      <button loc-id="subscription.subscribe" type="button"  class="localize subscription-button">Prenumeruoti</button>
     </div>
   </section>
   
   <footer>
-    <div class="footer-section">
-      <h3 class="localize footer-section-header">Ordino</h3>
-      <a href="" class="localize footer-link">Apie mus</a>
-      <a href="" class="localize footer-link">Iššūkiai</a>
-      <a href="" class="localize footer-link">D.U.K.</a>
-    </div>
-    <div class="footer-section">
-      <h3 class="localize footer-section-header">Ordino</h3>
-      <div class="footer-socials-container">
-        <!-- FB icon -->
-        <!-- Insta icon -->
+    <div class="footer-sections-container">
+      <div class="footer-section footer-link-section">
+        <a href="#section-cta"><h3 loc-id="footer.links.header" class="localize footer-section-header">Ordino</h3></a>
+        <a loc-id="footer.links.about" href="#section-about" class="localize footer-link">Apie mus</a>
+        <a loc-id="footer.links.challenges" href="#section-challenges" class="localize footer-link">Iššūkiai</a>
+        <a loc-id="footer.links.faq" href="#section-faq" class="localize footer-link">D.U.K.</a>
+      </div>
+      <div class="footer-section">
+        <h3 loc-id="footer.follow.header" class="localize footer-section-header">Sekite mus</h3>
+        <div class="footer-socials-container">
+          <a class="footer-socials-icon" href=""><img src="resources/img/fb-icon.svg" alt=""></a>
+          <a class="footer-socials-icon" href=""><img src="resources/img/insta-icon.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3 loc-id="footer.contacts.header" class="localize footer-section-header">Kontaktai</h3>
+        <p loc-id="footer.contacts.phone" class="localize footer-contact">Telefonas: </p>
+        <p loc-id="footer.contacts.email" class="localize footer-contact">El. Paštas: </p>
+        <p loc-id="footer.contacts.adress" class="localize footer-contact">Adresas: </p>
       </div>
     </div>
-    <div class="footer-section">
-      <h3 class="localize footer-section-header">Ordino</h3>
-      <p class="localize footer-contact">Telefonas: </p>
-      <p class="localize footer-contact">El. Paštas: </p>
-      <p class="localize footer-contact">Adresas: </p>
-    </div>
-    <p class="localize footer-rights">© Ordino Recycling 2022</p>
+    <p loc-id="footer.copyright" class="footer-rights">© Ordino Recycling 2022</p>
   </footer>
 
+<!-- collapsible script -->
+  <script>
+    var coll = document.getElementsByClassName("faq-question-container");
+    
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        let arrow =  this.querySelector(".faq-arrow");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          arrow.setAttribute("src", "resources/img/faq-arrow-closed.svg");
+          content.style.maxHeight = null;
+        } else {
+          arrow.setAttribute("src", "resources/img/faq-arrow-open.svg");
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 
+<!-- Localization script -->
   <script>
       function updateContent() {
         const elements = document.getElementsByClassName("localize");
         for (let i = 0; i < elements.length; i++) {
           const element = elements[i];
-          const k = element.getAttribute("data");
+          const k = element.getAttribute("loc-id");
           element.innerHTML = i18next.t(k);
         }
       }
@@ -188,10 +231,10 @@
         });
         const langSelector = document.getElementById("langSelector");
     
-        langSelector.addEventListener("click", (e) => {
-          console.log("clicked", e.target);
-          i18next.changeLanguage(e.target.innerText.toLowerCase());
-        });
+        // langSelector.addEventListener("click", (e) => {
+        //   console.log("clicked", e.target);
+        //   i18next.changeLanguage(e.target.innerText.toLowerCase());
+        // });
       }
       
       i18Loader();

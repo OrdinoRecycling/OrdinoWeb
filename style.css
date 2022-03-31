@@ -1,0 +1,418 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --dark: #212121;
+    --light: #F7F7F3;
+    --main-color-light: #A3B18A;
+    --main-color-base: #588157;
+    --main-color-dark: #344E41;
+
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body{
+    background-color: var(--light);
+
+    margin: 0;
+}
+
+.section-centered{
+    margin: auto;
+    width: 100%;
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.section-centered *
+{
+    text-align: center;
+}
+
+.section-header-divider
+{
+    border: unset;
+    border-top: 2px solid var(--main-color-light);
+    width: 50%;
+}
+
+.section-header
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+    margin: 0px;
+}
+
+.section-name
+{
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--main-color-base);
+}
+
+.text-card
+{
+    background-color: white;
+
+    padding: 14px 24px 40px 24px ;
+}
+
+.text-card-content
+{
+    display: flex;
+}
+
+.text-card-line
+{
+    height: 98px;
+
+    border: unset;
+    border-left: 5px solid #588157;
+    /* transform: rotate(90deg); */
+    margin-right: 24px;
+}
+
+.text-card-text
+{
+
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    margin: 0px;
+    margin-top: 0.5em;
+
+    color: #000000;
+}
+
+.img-card
+{
+    width: 100%;
+}
+
+.img-card>img
+{
+    width: 100%;
+}
+
+.subscription-button
+{
+    align-items: center;
+    padding: 15px 32px;
+
+    background: var(--main-color-light);
+    border-radius: 18px;
+    border-width: 0;
+    opacity: 0.95;
+
+    color: var(--light);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.faq-container
+{
+    margin: 24px;
+}
+
+.faq-question-container
+{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: unset;
+    border: unset;
+    padding: unset;
+}
+
+.faq-question
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: left;
+
+    color: var(--main-color-dark);
+}
+
+.faq-answer-container
+{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faq-answer
+{
+    margin: 0px;
+    text-align: left;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.faq-divider
+{
+    border-style: unset;
+    border-top: 1px solid var(--main-color-light);
+    width: 100%;
+}
+
+
+/* Sections */
+.section-cta{
+    background-image: url(./resources/img/background_1.png);
+    background-position: center;
+    height: 90vh;
+
+    /* Vertical centering */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.section-cta *
+{
+    color: var(--light);
+}
+
+.cta-header{
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    
+    color: var(--light); 
+    
+}
+
+.reason-box-container
+{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+
+.reason-box
+{
+    background: linear-gradient(296.27deg, #588157 24.65%, #A3B18A 100%);
+    box-shadow: 0px 4px 16px rgba(88, 129, 87, 0.1);
+    border-radius: 5px;
+
+    padding: 14px 6px 12px 6px ;
+}
+
+.reason-icon{
+    margin: 6px;
+}
+
+.reason-text
+{
+    color: var(--light);
+    font-size: 13px;
+    margin: 0px;
+}
+
+.partner-image-container
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+    width: 50%;
+}
+
+.partner-image
+{
+    width: 100%;
+}
+
+.section-end
+{
+    background-color: var(--main-color-dark);
+    color: var(--light);
+}
+
+footer
+{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.footer-sections-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section
+{
+    margin: 24px;
+}
+
+.footer-section-header
+{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.footer-rights
+{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.footer-link-section a 
+{
+    color: unset;
+    display: block;
+    text-decoration: unset;
+    margin: 8px 0 8px 0;
+}
+
+.footer-socials-icon
+{
+    margin: 8px 8px 8px 0;
+}
+
+li 
+{
+    list-style: none;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* NAVBAR STYLING STARTS */
+.navbar 
+{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 24px;
+    background-color: var(--light);
+    color: var(--main-color-base);
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-link
+{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+    text-decoration: none;
+}
+
+   /* NAVBAR MENU */
+.nav-menu
+{
+    display: flex;
+    
+    gap: 3em;
+    font-size: 18px;
+}
+
+.nav-menu li:hover 
+{
+    background-color: var(--main-color-light);
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.nav-menu li 
+{
+    padding: 5px 5px;
+    background-color: var(--light);
+}
+
+.nav-logo
+{
+    max-height: 55px;
+}
+
+/* CHECKBOX HACK */
+input[type=checkbox]
+{
+    display: none;
+} 
+   
+/*HAMBURGER MENU*/
+.hamburger 
+{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) 
+{
+    .nav-menu 
+    { 
+        display:none;
+        position: absolute;
+        background-color:var(--light);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        margin-top: 8px;
+    }
+
+    .nav-menu li:hover 
+    {
+        display: inline-block;
+        background-color:var(--main-color-light);
+        transition: 0.3s ease;
+    }
+
+    .nav-menu li + li 
+    {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .nav-menu
+    {
+        display: block;
+    }
+
+    .hamburger 
+    {
+        display: block;
+    }
+
+}
