@@ -10,11 +10,12 @@
     --main-color-dark: #344E41;
 
     font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body{
     background-color: var(--light);
-
     margin: 0;
 }
 
@@ -31,6 +32,7 @@ body{
     text-align: center;
 }
 
+
 .section-header-divider
 {
     border: unset;
@@ -40,7 +42,7 @@ body{
 
 .section-header
 {
-    font-style: normal;
+    
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -54,9 +56,27 @@ body{
 {
     font-size: 12px;
     line-height: 22px;
-    font-weight: 400;
     text-transform: uppercase;
     color: var(--main-color-base);
+}
+
+
+/* GENERAL SETTINGS RESPONSIVE FOR DESKTOP */
+@media (min-width: 768px) 
+{
+    .section-header
+    {
+        
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .section-name
+    {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+    }
 }
 
 .text-card
@@ -104,6 +124,71 @@ body{
     width: 100%;
 }
 
+/* CARD RESPONSIVE FOR DESKTOP */
+@media (min-width: 768px) 
+{
+    .text-card
+    {
+        position: relative;
+
+        padding: 5vw 8vw;
+    }
+
+    .text-card-text
+    {
+        font-size: 18px;
+        line-height: 28px;
+
+        margin: 0px;
+        margin-top: 0.5em;
+
+        color: #000000;
+    }
+
+    .text-card-content
+    {
+        position: relative;
+        left: 2vw;
+        width: 95%;
+    }
+
+    .text-card-about
+    {
+        width: 44vw;
+    }
+
+    .text-card-challenges
+    {
+        width: 600px;
+        
+        left: calc(84vw - 600px);
+        top: 10vh;
+    }
+
+    .img-card
+    {
+        position: relative;
+    }
+
+    .img-card-about
+    {
+        width: 50vw;
+
+        left: 40vw;
+        top: -5vw;
+    }
+
+    .img-card-challenges
+    {
+        width: 40vw;
+        max-width: 750px;
+
+        top:-750px;
+        left: calc(48vw - 600px)
+    }
+}
+
+
 .subscription-button
 {
     align-items: center;
@@ -116,10 +201,13 @@ body{
 
     color: var(--light);
 
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+}
+
+.subscription-button:hover
+{
+    background: var(--main-color-base);
 }
 
 .faq-container
@@ -142,7 +230,6 @@ body{
 
 .faq-question
 {
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -164,8 +251,6 @@ body{
     margin: 0px;
     text-align: left;
 
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 
@@ -179,11 +264,30 @@ body{
     width: 100%;
 }
 
+@media (min-width: 768px) 
+{
+    .faq-question
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+    }
+
+    .faq-answer
+    {
+        margin: 8px 0px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
 
 /* Sections */
 .section-cta{
     background-image: url(./resources/img/background_1.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 90vh;
 
     /* Vertical centering */
@@ -200,7 +304,7 @@ body{
 .cta-header{
 
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.9rem;
     line-height: 38px;
     
     color: var(--light); 
@@ -212,12 +316,13 @@ body{
     display: grid;
     
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    column-gap: 15px;
+    row-gap: 15px;
 
     padding-left: 24px;
     padding-right: 24px;
 
+    justify-items: center;
 }
 
 .reason-box
@@ -227,17 +332,57 @@ body{
     border-radius: 5px;
 
     padding: 14px 6px 12px 6px ;
+    
+    width: 38vw;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2vw;
+    
+    justify-content: center;
+    justify-items: center;
+    vertical-align: middle;
 }
 
 .reason-icon{
     margin: 6px;
+    height: 90%;
 }
 
 .reason-text
 {
     color: var(--light);
-    font-size: 13px;
+    
+    font-size: 0.8rem;
     margin: 0px;
+}
+
+/* REASON DESKTOP VER */
+@media (min-width: 768px) {
+    
+    .reason-box-container
+    {
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2vw;
+        row-gap: 2vw;
+
+        padding: 5vh 10vw 6vh 10vw;
+    }
+
+    .reason-box
+    {
+        width: 23vw;
+        height: 21vh;
+    }
+
+    .reason-text
+    {
+        font-size: 1.1rem;
+        line-height: 26.4px;
+        margin: 0px;
+    }
 }
 
 .partner-image-container
@@ -252,6 +397,28 @@ body{
 .partner-image
 {
     width: 100%;
+    max-width: 290px;
+}
+
+@media (min-width:768px) {
+    .section-partners
+    {
+        background-color: white;
+    }
+
+    .section-challenges
+    {
+        height: 1000px;
+    }
+
+    .section-faq
+    {
+        width: 60%;
+
+        padding: unset;
+        padding-left: 20%;
+        padding-right: 20%
+    }
 }
 
 .section-end
@@ -280,7 +447,6 @@ footer
 
 .footer-section-header
 {
-    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
 }
@@ -305,6 +471,22 @@ footer
     margin: 8px 8px 8px 0;
 }
 
+@media (min-width: 768px) 
+{
+    footer
+    {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .footer-link-section a 
+    {
+        font-size: 16px;
+    }
+    
+}
+
 li 
 {
     list-style: none;
@@ -318,7 +500,7 @@ li
     display: flex; 
     align-items: center;
     justify-content: space-between;
-    padding: 10px 24px;
+    padding: 10px 40px;
     background-color: var(--light);
     color: var(--main-color-base);
 
@@ -329,7 +511,6 @@ li
 
 .nav-link
 {
-    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
 
@@ -361,7 +542,7 @@ li
 
 .nav-logo
 {
-    max-height: 55px;
+    max-height: 88px;
 }
 
 /* CHECKBOX HACK */
@@ -378,9 +559,11 @@ input[type=checkbox]
     user-select: none;
 }
 
-/* APPLYING MEDIA QUERIES */
+/* MOBILE VERSION MODIFIERS */
 @media (max-width: 768px) 
 {
+
+    /* NAVBAR */
     .nav-menu 
     { 
         display:none;
@@ -389,8 +572,13 @@ input[type=checkbox]
         right: 0;
         left: 0;
         text-align: center;
-        padding: 16px 0;
+        padding: 32px 100px;
         margin-top: 8px;
+    }
+
+    .nav-logo
+    {
+        max-height: 55px;
     }
 
     .nav-menu li:hover 
