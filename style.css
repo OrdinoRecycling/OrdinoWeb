@@ -337,11 +337,14 @@ body{
     
     display: grid;
     grid-template-rows: 1fr 1fr;
-    row-gap: 2vw;
+    row-gap: 1vw;
     
-    justify-content: center;
+    align-items: center;
+
+    justify-self: center;
     justify-items: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    
 }
 
 .reason-icon{
@@ -352,7 +355,8 @@ body{
 .reason-text
 {
     color: var(--light);
-    
+    display: contents;
+
     font-size: 0.8rem;
     margin: 0px;
 }
@@ -382,6 +386,9 @@ body{
         font-size: 1.1rem;
         line-height: 26.4px;
         margin: 0px;
+        
+        height: 100%;
+        
     }
 }
 
