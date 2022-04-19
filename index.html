@@ -168,7 +168,7 @@
   <footer>
     <div id="section-contacts"  class="footer-sections-container">
       <div class="footer-section footer-link-section" >
-        <a href="#section-cta"><h3 loc-id="footer.links.header"  class="localize footer-section-header">Ordino</h3></a>
+        <a onclick="scrollToElementById('section-cta')"><h3 loc-id="footer.links.header"  class="localize footer-section-header">Ordino</h3></a>
         <a loc-id="footer.links.about" onclick="scrollToElementById('section-about')" class="localize footer-link">Apie mus</a>
         <a loc-id="footer.links.challenges" onclick="scrollToElementById('section-challenges')" class="localize footer-link">Iššūkiai</a>
         <a loc-id="footer.links.faq" onclick="scrollToElementById('section-faq')" class="localize footer-link">D.U.K.</a>
@@ -201,7 +201,6 @@
     function scrollToElementById(id)
     {
       var pos = (document.getElementById(id).getBoundingClientRect().top + window.scrollY) - document.querySelector(".navbar").offsetHeight;
-        // .scrollIntoView({behavior:"smooth",block:"center"});
       window.scrollTo(0, pos);
     }
   </script>
