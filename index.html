@@ -12,6 +12,15 @@
     <!-- <link rel="import" href="./components/reason-box/reasonBox.html"> -->
     <link rel="stylesheet" href="style.css">
     <script src="./components/reason-box/reasonBox.js"></script>
+    <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '24592');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 <body>
   <nav class="navbar">
@@ -33,7 +42,7 @@
       <h1 loc-id="call_to_action.header" class="cta-header localize">Pradėk savo kelią į tvarumą jau dabar</h1>
       <p loc-id="call_to_action.subtext" class="cta-subtext localize">Pirmieji sužinokite, kai galėsite nemokamai atsisiųsti Ordino aplikaciją</p>
       <div class="subscription-container">
-        <button loc-id="subscription.subscribe" type="button"  class="localize subscription-button">Prenumeruoti</button>
+        <button onclick="ml('show', 'oXOUyO', true)" loc-id="subscription.subscribe" type="button" class="localize subscription-button ml-onclick-form">Prenumeruoti</button>
       </div>
     </div>
   </section>
@@ -152,12 +161,12 @@
   <section class="section-end section-centered">
     <div class="end-content">
       <p loc-id="call_to_action.subtext" class="localize end-text">Pirmieji sužinokite, kai galėsite nemokamai atsisiųsti Ordino aplikaciją</p>
-      <button loc-id="subscription.subscribe" type="button"  class="localize subscription-button">Prenumeruoti</button>
+      <button loc-id="subscription.subscribe" onclick="ml('show', 'oXOUyO', true)" class="localize subscription-button ml-onclick-form">Prenumeruoti</button>
     </div>
   </section>
   
   <footer>
-    <div class="footer-sections-container">
+    <div id="section-contacts" class="footer-sections-container">
       <div class="footer-section footer-link-section">
         <a href="#section-cta"><h3 loc-id="footer.links.header" class="localize footer-section-header">Ordino</h3></a>
         <a loc-id="footer.links.about" href="#section-about" class="localize footer-link">Apie mus</a>
