@@ -350,6 +350,7 @@ body{
 .reason-icon{
     margin: 6px;
     height: 90%;
+    max-width: 20vw; 
 }
 
 .reason-text
@@ -388,7 +389,11 @@ body{
         margin: 0px;
         
         height: 100%;
-        
+    }
+
+    .reason-icon{
+        margin-top: 2vw;
+        max-width: 10vw;
     }
 }
 
