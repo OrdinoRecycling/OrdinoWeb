@@ -178,7 +178,7 @@
         <div class="footer-socials-container">
           <a class="footer-socials-icon" href="https://www.facebook.com/ordinorecycling"><img src="resources/img/fb-icon.svg" alt=""></a>
           <a class="footer-socials-icon" href="https://www.instagram.com/ordinorecycling/"><img src="resources/img/insta-icon.svg" alt=""></a>
-          <a class="footer-socials-icon" href=""><img src="resources/img/twitter-icon.svg" alt="https://twitter.com/OrdinoRecycling"></a>
+          <a class="footer-socials-icon" href="https://twitter.com/OrdinoRecycling"><img src="resources/img/twitter-icon.svg" alt=""></a>
         </div>
       </div>
       <div class="footer-section">
@@ -190,6 +190,30 @@
     </div>
     <p loc-id="footer.copyright" class="footer-rights">© Ordino Recycling 2022</p>
   </footer>
+  <!-- GDPR popup -->
+  <div class="popup" id="gdprPopup">
+    <p class="popuptext element" data="gdpr.text">Šis puslapis naudoja tik tuos slapukus kurių griežtai reikia. Kad teiktų paslaugas svetainės talpinimo paslaugų tiekėjas (GitHub Inc.) išsaugo jūsų IP adresą (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">jų privatumo politika</a>). Ordino Recycling nekaupia jokių svetainės lankytojų duomenų. Jūsų duomenys (el. paštas) bus išsaugotas ir naudojamas su jumis susisiekti, jeigu pasirinksite prenumeruoti naujienlaiškį.</p>
+    <button class="popupBtn subscription-button element" onclick="confirmGDPR()" data="gdpr.confirm">Supratau</button>
+  </div>
+
+
+  <!-- GDPR script -->
+  <script>
+    const gdprPopup = document.getElementById("gdprPopup");
+    const gdprConfirmed = document.cookie.includes("GDPRConfirmed=true");
+
+    function confirmGDPR()
+    {
+        gdprPopup.classList.remove("showPopup");
+        document.cookie = "GDPRConfirmed=true; path=/;";
+    }
+
+    console.log(`GDPR Confirmed: ${gdprConfirmed}`);
+
+    if(!gdprConfirmed) 
+        gdprPopup.classList.toggle("showPopup");
+
+  </script>
 
   <!-- Nav assist -->
   <script>
