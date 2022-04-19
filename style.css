@@ -14,6 +14,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--light);
     margin: 0;

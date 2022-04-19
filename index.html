@@ -29,10 +29,10 @@
         <input type="checkbox" id="checkbox_toggle" />
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <div class="nav-menu">
-          <li><a href="#section-about"      class="localize nav-link" loc-id="navigation.about">Apie mus</a> </li>
-          <li><a href="#section-challenges" class="localize nav-link" loc-id="navigation.challenges">Iššūkiai</a> </li>
-          <li><a href="#section-faq"        class="localize nav-link" loc-id="navigation.faq">D.U.K.</a> </li>
-          <li><a href="#section-contacts"   class="localize nav-link" loc-id="navigation.contacts">Kontaktai</a> </li>
+          <li><a onclick="closeNav(); scrollToElementById('section-about')" class="localize nav-link" loc-id="navigation.about">Apie mus</a> </li>
+          <li><a onclick="closeNav(); scrollToElementById('section-challenges')" class="localize nav-link" loc-id="navigation.challenges">Iššūkiai</a> </li>
+          <li><a onclick="closeNav(); scrollToElementById('section-faq')" class="localize nav-link" loc-id="navigation.faq">D.U.K.</a> </li>
+          <li><a onclick="closeNav(); scrollToElementById('section-contacts')" class="localize nav-link" loc-id="navigation.contacts">Kontaktai</a> </li>
         </div>
       </ul>
   </nav>
@@ -166,12 +166,12 @@
   </section>
   
   <footer>
-    <div id="section-contacts" class="footer-sections-container">
-      <div class="footer-section footer-link-section">
-        <a href="#section-cta"><h3 loc-id="footer.links.header" class="localize footer-section-header">Ordino</h3></a>
-        <a loc-id="footer.links.about" href="#section-about" class="localize footer-link">Apie mus</a>
-        <a loc-id="footer.links.challenges" href="#section-challenges" class="localize footer-link">Iššūkiai</a>
-        <a loc-id="footer.links.faq" href="#section-faq" class="localize footer-link">D.U.K.</a>
+    <div id="section-contacts"  class="footer-sections-container">
+      <div class="footer-section footer-link-section" >
+        <a href="#section-cta"><h3 loc-id="footer.links.header"  class="localize footer-section-header">Ordino</h3></a>
+        <a loc-id="footer.links.about" onclick="scrollToElementById('section-about')" class="localize footer-link">Apie mus</a>
+        <a loc-id="footer.links.challenges" onclick="scrollToElementById('section-challenges')" class="localize footer-link">Iššūkiai</a>
+        <a loc-id="footer.links.faq" onclick="scrollToElementById('section-faq')" class="localize footer-link">D.U.K.</a>
       </div>
       <div class="footer-section">
         <h3 loc-id="footer.follow.header" class="localize footer-section-header">Sekite mus</h3>
@@ -194,10 +194,17 @@
   <script>
     function closeNav()
     {
-      
+      let checkbox = document.getElementById("checkbox_toggle");
+      checkbox.checked = false;
+    }
+    
+    function scrollToElementById(id)
+    {
+      var pos = (document.getElementById(id).getBoundingClientRect().top + window.scrollY) - document.querySelector(".navbar").offsetHeight;
+        // .scrollIntoView({behavior:"smooth",block:"center"});
+      window.scrollTo(0, pos);
     }
   </script>
-
 <!-- collapsible script -->
   <script>
     var coll = document.getElementsByClassName("faq-question-container");
