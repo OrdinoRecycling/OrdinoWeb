@@ -71,5 +71,9 @@
             "adress": "Adresas: S. Žukausko g. 26-12, LT-08239, Vilnius"
         },
         "copyright": "© Ordino Recycling 2022"
+    },
+    "gdpr": {
+        "text": "Šis puslapis naudoja tik tuos slapukus kurių griežtai reikia. Kad teiktų paslaugas svetainės talpinimo paslaugų tiekėjas (GitHub Inc.) išsaugo jūsų IP adresą (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">jų privatumo politika</a>). Ordino Recycling nekaupia jokių svetainės lankytojų duomenų. Jūsų duomenys (el. paštas) bus išsaugotas ir naudojamas su jumis susisiekti, jeigu pasirinksite prenumeruoti naujienlaiškį.",
+        "confirm": "Supratau"
     }
 }
