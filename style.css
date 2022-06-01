@@ -21,6 +21,7 @@ html {
 body{
     background-color: var(--light);
     margin: 0;
+    overflow-x: hidden;
 }
 
 .section-centered{
