@@ -23,6 +23,10 @@ body{
     overflow-x: hidden;
 }
 
+#tos-container{
+    margin: 20px 200px 0px 200px;
+}
+
 .section-centered{
     margin: auto;
     width: 100%;
@@ -404,6 +408,8 @@ body{
 .partner-image-container
 {
     display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content:center;
     align-items:center;
     margin: auto;
